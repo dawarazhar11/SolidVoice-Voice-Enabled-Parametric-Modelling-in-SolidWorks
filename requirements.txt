@@ -1,4 +1,7 @@
-openai
+anthropic>=0.39.0
+faster-whisper>=1.0.0
+qdrant-client>=1.12.0
+httpx>=0.27.0
 pywin32
 SpeechRecognition
 PyAudio
