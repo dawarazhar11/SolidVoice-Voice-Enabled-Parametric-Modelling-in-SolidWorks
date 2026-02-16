@@ -1,6 +1,30 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
 dist/
 build/
+*.egg
+.venv/
+venv/
+
+# Rust
+ui/target/
+ui/**/*.rs.bk
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config secrets
+config.local.ini
+
+# Qdrant data
+qdrant_storage/
