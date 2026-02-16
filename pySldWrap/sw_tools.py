@@ -21,9 +21,14 @@ def connect_sw(sw_year):
 
     Args:
         sw_year (str): solidworks version (year), for example if you have solidworks 2019 pass "2019"
+
+    Supported versions: SW2012 (20) through SW2025 (36).
     """
 
-    sw_app = win32com.client.Dispatch("SldWorks.Application.%d" % (int(sw_year)-2012+23))  # e.g. SW2012 is 20, SW2015 is 23
+    # SolidWorks version mapping: SW2012=20, each subsequent year increments by 1
+    # SW2015=23, SW2020=28, SW2024=35, SW2025=36
+    version_code = int(sw_year) - 2012 + 20
+    sw_app = win32com.client.Dispatch("SldWorks.Application.%d" % version_code)
 
     sw.set_sw(sw_app)
     
@@ -40,9 +45,9 @@ def create_new_part(path):
     """
     
     model = None
-    
+
     try:
-        model = swApp.NewDocument("Part", 0, 0, 0)
+        model = sw.app.NewDocument("Part", 0, 0, 0)
         model.Extension.SaveAs(path, 0)
         
     except Exception as e:
