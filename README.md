@@ -1,8 +1,8 @@
 <div align="center">
 
-# SolidWorks Voice AI
+# VoxCAD
 
-### Intelligent Voice-Controlled CAD Automation
+### Speak Your Designs Into Existence
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
@@ -11,9 +11,9 @@
 [![SolidWorks](https://img.shields.io/badge/SolidWorks-2020--2025-E2231A.svg)](https://solidworks.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**Talk to SolidWorks. Build anything.**
+**Your voice is the new command line for CAD.**
 
-A voice-first SolidWorks automation platform powered by Claude AI, local Whisper speech recognition, and a vector memory system that gives every part persistent, context-aware history.
+VoxCAD is an AI-powered voice interface for SolidWorks that turns spoken English into parametric 3D models. It pairs Claude AI for intent understanding with local Whisper speech recognition and a vector memory engine — so the AI remembers every feature you've ever built and can reason about your design history in context.
 
 [Getting Started](#getting-started) · [Architecture](#architecture) · [Voice Commands](#voice-commands) · [Desktop UI](#desktop-ui-rust) · [Contributing](CONTRIBUTING.md)
 
@@ -291,5 +291,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
-  <sub>Built with Claude AI · Whisper · Qdrant · SolidWorks COM API · Rust egui</sub>
+  <sub>VoxCAD — Built with Claude AI · Whisper · Qdrant · SolidWorks COM API · Rust egui</sub>
 </div>

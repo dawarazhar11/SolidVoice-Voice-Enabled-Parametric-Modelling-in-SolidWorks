@@ -1,4 +1,4 @@
-# Contributing to SolidWorks Voice AI
+# Contributing to VoxCAD
 
 Thanks for your interest in contributing! This guide will help you get started.
 
